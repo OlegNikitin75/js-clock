@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Clock</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="section section-buttons">
+      <div class="buttons">
+        <button class="btn sun-btn btn--active">
+          <img class="btn-img " src="./assets/icon/brightness-high.svg" alt="icon">
+        </button>
+        <button class="btn  moon-btn">
+          <img class="btn-img" src="./assets/icon/moon.svg" alt="icon">
+        </button>
+      </div>
+    </section>
+    <section class="section section-clock">
+      <div class="clock__inner night">
+        <img class="clock__icon night" src="./assets/icon/js-icon.svg" alt="icon">
+        <div class="clock__numbers">
+          <ul class="numbers night">
+            <div class=horizontal-wrap>
+              <ul class="numbers__list-horizontal numbers__list-horizontal--top">
+                <li class="numbers__item numbers__horizontal numbers__horizontal-top">11</li>
+                <li class="numbers__item numbers__horizontal numbers__horizontal-top">12</li>
+                <li class="numbers__item numbers__horizontal numbers__horizontal-top">1</li>
+              </ul>
+              <ul class="numbers__list-horizontal numbers__list-horizontal--bottom">
+                <li class="numbers__item numbers__horizontal numbers__horizontal-top">5</li>
+                <li class="numbers__item numbers__horizontal numbers__horizontal-top">6</li>
+                <li class="numbers__item numbers__horizontal numbers__horizontal-top">7</li>
+              </ul>
+            </div>
+            <div class="vertical-wrap">
+              <ul class="numbers__list-vertical numbers__list-vertical--right">
+                <li class="numbers__item numbers__horizontal numbers__horizontal-top">2</li>
+                <li class="numbers__item numbers__horizontal numbers__horizontal-top">3</li>
+                <li class="numbers__item numbers__horizontal numbers__horizontal-top">4</li>
+              </ul>
+              <ul class="numbers__list-vertical numbers__list-vertical--left">
+                <li class="numbers__item numbers__horizontal numbers__horizontal-top">8</li>
+                <li class="numbers__item numbers__horizontal numbers__horizontal-top">9</li>
+                <li class="numbers__item numbers__horizontal numbers__horizontal-top">10</li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="clock__arrows">
+          <div class="hour">
+            <div class="arrow-hour night" id="hour"></div>
+          </div>
+          <div class="minute night">
+            <div class="arrow-minute" id="minute"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-second" id="second"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-data">
+      <div class="digital-box">
+        <span class="digital-hour"></span>
+        <span class="digital-div">:</span>
+        <span class="digital-minute"></span>
+        <span class="digital-div">:</span>
+        <span class="digital-second"></span>
+      </div>
+      <div class="day-box">
+        <span class="day"></span>
+      </div>
+     <div class="date__inner">
+        <div class="date-box">
+          <span class="date"></span>
+        </div>
+        <div class="month-box">
+          <span class="month"></span>
+        </div>
+     </div>
+      <div class="year-box">
+        <span class="year"></span>
+      </div>
+    </section>
+  </div>
+  <div class="box-shadow"></div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
